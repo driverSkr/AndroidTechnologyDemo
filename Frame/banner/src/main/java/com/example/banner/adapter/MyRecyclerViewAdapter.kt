@@ -32,7 +32,7 @@ class MyRecyclerViewAdapter(val context: Context): RecyclerView.Adapter<Recycler
             holder.banner.apply {
                 setAdapter(ImageNetAdapter(DataBean.getTestData3()))
                 setBannerRound(BannerUtils.dp2px(5f).toFloat())
-                setIndicator(RoundLinesIndicator(context))
+                indicator = RoundLinesIndicator(context)
                 setIndicatorSelectedWidth(BannerUtils.dp2px(15f))
             }
         }

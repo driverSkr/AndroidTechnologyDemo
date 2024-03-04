@@ -1,5 +1,6 @@
 package com.example.banner.adapter
 
+import android.annotation.SuppressLint
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
@@ -21,6 +22,7 @@ class ImageTitleNumAdapter(mDatas: List<DataBean>): BannerAdapter<DataBean, Imag
     }
 
     //绑定数据
+    @SuppressLint("SetTextI18n")
     override fun onBindView(holder: BannerViewHolder?, data: DataBean, position: Int, size: Int) {
         holder?.imageView?.setImageResource(data.imageRes)
         holder?.title?.text = data.title
@@ -30,7 +32,7 @@ class ImageTitleNumAdapter(mDatas: List<DataBean>): BannerAdapter<DataBean, Imag
 
     inner class BannerViewHolder(view: View): RecyclerView.ViewHolder(view) {
         val imageView: ImageView = view.findViewById(R.id.image)
-        val title = view.findViewById<TextView>(R.id.bannerTitle)
-        val numIndicator = view.findViewById<TextView>(R.id.numIndicator)
+        val title: TextView = view.findViewById(R.id.bannerTitle)
+        val numIndicator: TextView = view.findViewById(R.id.numIndicator)
     }
 }

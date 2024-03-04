@@ -1,5 +1,6 @@
 package com.example.banner.adapter
 
+import android.annotation.SuppressLint
 import android.view.ViewGroup
 import android.widget.ImageView
 import com.example.banner.bean.DataBean
@@ -13,6 +14,7 @@ import com.youth.banner.adapter.BannerAdapter
 class ImageAdapter(mDatas: List<DataBean>): BannerAdapter<DataBean, ImageHolder>(mDatas) {
 
     //更新数据
+    @SuppressLint("NotifyDataSetChanged")
     fun updateData(data: List<DataBean>) {
         //这里的代码自己发挥，比如如下的写法等等
         mDatas.clear()

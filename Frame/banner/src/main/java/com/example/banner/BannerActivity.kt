@@ -18,6 +18,7 @@ import com.example.banner.databinding.ActivityBannerBinding
 import com.example.banner.ui.ConstraintLayoutBannerActivity
 import com.example.banner.ui.GalleryActivity
 import com.example.banner.ui.RecyclerViewBannerActivity
+import com.example.banner.ui.TVActivity
 import com.example.banner.ui.TouTiaoActivity
 import com.example.banner.ui.VideoActivity
 import com.example.banner.ui.Vp2FragmentRecyclerviewActivity
@@ -29,6 +30,7 @@ import com.youth.banner.holder.BannerImageHolder
 import com.youth.banner.indicator.CircleIndicator
 import com.youth.banner.indicator.RoundLinesIndicator
 import com.youth.banner.util.BannerUtils
+import java.lang.IllegalStateException
 
 class BannerActivity : AppCompatActivity(), View.OnClickListener {
 
@@ -155,6 +157,8 @@ class BannerActivity : AppCompatActivity(), View.OnClickListener {
             R.id.cl_banner -> startActivity(Intent(this, ConstraintLayoutBannerActivity::class.java))
             R.id.vp_banner -> startActivity(Intent(this, Vp2FragmentRecyclerviewActivity::class.java))
             R.id.banner_video -> startActivity(Intent(this, VideoActivity::class.java))
+            R.id.banner_tv -> startActivity(Intent(this, TVActivity::class.java))
+            else -> IllegalStateException("Unexpected value: ${v?.id}")
         }
     }
 }

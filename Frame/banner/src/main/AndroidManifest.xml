@@ -3,26 +3,37 @@
 
     <application>
         <activity
+            android:name=".ui.TVActivity"
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
+        <activity
             android:name=".ui.VideoActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
         <activity
             android:name=".ui.Vp2FragmentRecyclerviewActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
         <activity
             android:name=".ui.ConstraintLayoutBannerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
         <activity
             android:name=".ui.RecyclerViewBannerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
         <activity
             android:name=".ui.TouTiaoActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
         <activity
             android:name=".ui.GalleryActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
         <activity
             android:name=".BannerActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:theme="@style/BannerTheme"/>
     </application>
 
 </manifest>

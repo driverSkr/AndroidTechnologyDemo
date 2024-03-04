@@ -18,12 +18,16 @@ class TopLineAdapter(mDatas: List<DataBean>): BannerAdapter<DataBean, TopLineAda
 
     override fun onBindView(holder: TopLineHolder?, data: DataBean, position: Int, size: Int) {
         holder?.message?.text = data.title
-        if (data.viewType == 1) {
-            holder?.source?.text = "1号店"
-        } else if (data.viewType == 2) {
-            holder?.source?.text = "淘宝头条"
-        } else if (data.viewType == 3) {
-            holder?.source?.text = "京东快报"
+        when (data.viewType) {
+            1 -> {
+                holder?.source?.text = "1号店"
+            }
+            2 -> {
+                holder?.source?.text = "淘宝头条"
+            }
+            3 -> {
+                holder?.source?.text = "京东快报"
+            }
         }
     }
 

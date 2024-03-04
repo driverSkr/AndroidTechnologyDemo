@@ -24,7 +24,7 @@ class GalleryActivity : AppCompatActivity() {
          */
         binding.banner1.apply {
             setAdapter(ImageAdapter(DataBean.getTestData2()))
-            setIndicator(CircleIndicator(this@GalleryActivity))
+            indicator = CircleIndicator(this@GalleryActivity)
             //添加画廊效果
             setBannerGalleryEffect(50, 10)
             //(可以和其他PageTransformer组合使用，比如AlphaPageTransformer，注意但和其他带有缩放的PageTransformer会显示冲突)
