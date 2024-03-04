@@ -15,7 +15,7 @@
         android:orientation="vertical"
         android:padding="35px">
 
-        <com.airizz.base.widget.progress.LoadingView
+        <com.ethan.base.widget.progress.LoadingView
             android:id="@+id/pb_progress"
             android:layout_width="45dp"
             android:layout_height="45dp"

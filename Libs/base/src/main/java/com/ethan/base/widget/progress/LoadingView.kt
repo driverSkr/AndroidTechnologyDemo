@@ -1,4 +1,4 @@
-package com.airizz.base.widget.progress
+package com.ethan.base.widget.progress
 
 import android.animation.ValueAnimator
 import android.content.Context
@@ -7,7 +7,7 @@ import android.graphics.Paint
 import android.util.AttributeSet
 import android.view.View
 import android.view.animation.LinearInterpolator
-import com.airizz.base.R
+import com.ethan.base.R
 import java.lang.Math.PI
 import kotlin.math.cos
 import kotlin.math.sin

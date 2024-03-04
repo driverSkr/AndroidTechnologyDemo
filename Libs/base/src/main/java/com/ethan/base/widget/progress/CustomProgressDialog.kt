@@ -9,7 +9,6 @@ import android.view.View
 import android.view.WindowManager
 import android.widget.TextView
 import com.ethan.base.R
-import com.airizz.base.widget.progress.LoadingView
 
 class CustomProgressDialog(context: Activity) : Dialog(context, R.style.custom_dialog) {
     private var progressMessage: TextView? = null

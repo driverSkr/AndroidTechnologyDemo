@@ -1,4 +1,4 @@
-package com.airizz.base.widget.progress
+package com.ethan.base.widget.progress
 
 class Progress {
     init {
