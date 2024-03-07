@@ -12,8 +12,12 @@
             <option value="$PROJECT_DIR$/Frame" />
             <option value="$PROJECT_DIR$/Frame/banner" />
             <option value="$PROJECT_DIR$/Libs" />
+            <option value="$PROJECT_DIR$/Libs/Base" />
+            <option value="$PROJECT_DIR$/Libs/Database" />
             <option value="$PROJECT_DIR$/Libs/FlowBus" />
-            <option value="$PROJECT_DIR$/Libs/base" />
+            <option value="$PROJECT_DIR$/Libs/Network" />
+            <option value="$PROJECT_DIR$/Libs/myBase" />
+            <option value="$PROJECT_DIR$/Libs/utils" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
