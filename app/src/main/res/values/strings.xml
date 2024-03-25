@@ -1,3 +1,13 @@
 <resources>
     <string name="app_name">安卓技术Demo</string>
+    <string name="share">分享到</string>
+    <string name="save">保存</string>
+    <string name="share_wechat_text">微信</string>
+    <string name="share_douyin_text">抖音</string>
+    <string name="share_xiaohongshu_text">小红书</string>
+    <string name="share_moments_text">朋友圈</string>
+    <string name="share_tiktok_text">Tiktok</string>
+    <string name="share_instagram_text">instagram</string>
+    <string name="share_facebook_text">facebook</string>
+    <string name="share_more_text">more</string>
 </resources>
