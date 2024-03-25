@@ -9,10 +9,11 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Components" />
+            <option value="$PROJECT_DIR$/Components/sharer" />
             <option value="$PROJECT_DIR$/Frame" />
             <option value="$PROJECT_DIR$/Frame/banner" />
             <option value="$PROJECT_DIR$/Libs" />
-            <option value="$PROJECT_DIR$/Libs/Base" />
             <option value="$PROJECT_DIR$/Libs/Database" />
             <option value="$PROJECT_DIR$/Libs/FlowBus" />
             <option value="$PROJECT_DIR$/Libs/Network" />

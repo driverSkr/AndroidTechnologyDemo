@@ -1,10 +1,16 @@
 package com.ethan.app.vm
 
+import android.app.Activity
+import android.content.Intent
+import android.net.Uri
+import android.util.Log
+import androidx.activity.result.ActivityResultLauncher
 import androidx.annotation.DrawableRes
 import androidx.annotation.StringRes
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.ethan.app.R
+import com.ethan.sharer.Sharer
 
 class ShareViewModel : ViewModel() {
 
@@ -40,6 +46,20 @@ class ShareViewModel : ViewModel() {
     }
 
     var shareVideoPath = MutableLiveData<ShareVideoState>()
+
+    fun doShare(activity: Activity, icon: ShareIcon, uri: Uri, launcher: ActivityResultLauncher<Intent>) {
+        Log.d("ethan", "你选择的视频uri: $uri")
+        //val pendingIntent = PendingIntent.getBroadcast(context, 0, Intent(context, ShareMediaReceiver::class.java), PendingIntent.FLAG_IMMUTABLE or PendingIntent.FLAG_UPDATE_CURRENT)
+        when (icon) {
+            shareIconXiaohongshu -> {
+                val intent = Sharer.share(
+                    uri, "video/*",null, "shareText",
+                )
+                launcher.launch(intent)
+            }
+        }
+    }
+
 
     /*fun doShare(fragment: BaseFragment, icon: ShareIcon, launcher: ActivityResultLauncher<Intent>, tag: String) {
         // val tagList = tag.split(",")

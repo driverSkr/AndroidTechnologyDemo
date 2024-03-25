@@ -3,6 +3,12 @@
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <queries>
+        <package android:name="com.xingin.xhs"/>
+        <package android:name="com.tencent.mm"/>
+    </queries>
 
     <application
         android:allowBackup="true"

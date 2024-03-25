@@ -4,6 +4,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.ethan.app.databinding.ActivityMainBinding
+import com.ethan.app.ui.ShareActivity
 import com.example.banner.BannerActivity
 
 class MainActivity : AppCompatActivity() {
@@ -15,5 +16,6 @@ class MainActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         binding.banner.setOnClickListener { startActivity(Intent(this, BannerActivity::class.java)) }
+        binding.share.setOnClickListener { startActivity(Intent(this, ShareActivity::class.java)) }
     }
 }
