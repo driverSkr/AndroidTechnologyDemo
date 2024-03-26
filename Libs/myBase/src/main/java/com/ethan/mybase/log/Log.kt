@@ -1,4 +1,4 @@
-package com.ethan.utils.log
+package com.ethan.mybase.log
 
 import android.util.Log
 
