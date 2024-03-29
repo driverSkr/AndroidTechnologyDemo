@@ -6,11 +6,12 @@
     <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <queries>
-        <package android:name="com.xingin.xhs"/>
-        <package android:name="com.tencent.mm"/>
+        <package android:name="com.xingin.xhs" />
+        <package android:name="com.tencent.mm" />
     </queries>
 
     <application
+        android:name=".MyApplication"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"
@@ -19,6 +20,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.AndroidTechnologyDemo"
         tools:targetApi="31">
+        <activity
+            android:name=".ui.LoginActivity"
+            android:exported="false" />
         <activity
             android:name=".ui.ShareActivity"
             android:exported="false" />
@@ -31,6 +35,38 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:exported="false"
+            android:name="com.alicom.fusion.auth.numberauth.FusionNumberAuthActivity"
+            android:screenOrientation="portrait"
+            android:theme="@style/NumberAuthTheme"/>
+
+        <activity
+            android:exported="false"
+            android:name="com.alicom.fusion.auth.upsms.AlicomFusionUpSmsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:exported="false"
+            android:name="com.alicom.fusion.auth.smsauth.FusionSmsActivity"
+            android:screenOrientation="portrait"/>
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:name="com.mobile.auth.gatewayauth.LoginAuthActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/authsdk_activity_dialog"/>
+
+        <activity
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:exported="false"
+            android:launchMode="singleTop"
+            android:name="com.mobile.auth.gatewayauth.PrivacyDialogActivity"
+            android:screenOrientation="behind"
+            android:theme="@style/authsdk_activity_dialog"/>
     </application>
 
 </manifest>

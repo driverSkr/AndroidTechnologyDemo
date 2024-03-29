@@ -1,0 +1,32 @@
+package com.ethan.app.util;
+
+/**
+ * @Package: com.example.fusionauthdemo
+ * @Description:
+ * @CreateDate: 2023/2/10
+ */
+public class Constant {
+
+    public static final String SCHEME_CODE = "FA000000005210046054";
+    //服务地址
+    public static final String NETURL = "";
+    //获取token接口
+    public static final String GETAUTHREQUESTACTION= "";
+    //换取手机号接口
+    public static final String VERIFYREQUESTACTION = "";
+
+
+    //* 1. 快速访问模式
+    // * 可快速调试demo体验【部分】功能，可暂不接入服务端api
+    // * 临时鉴权token请登陆阿里云控制台获取(https://next.api.aliyun.com/api/Dypnsapi/2017-05-25/GetFusionAuthToken)
+    // * 由于最终校验结果需通过服务端api进行，此模式下默认校验成功，填充默认手机号：18888888888
+    // */
+    /* 2. 正常访问模式
+     * 正常接入融合认证服务端和客户端SDK，进行正式调试体验全部功能
+     * 请根据接入指南（https://help.aliyun.com/document_detail/2248981.html?spm=a2c4g.2249334.0.0.34c37b8cnywXZq） 首先接入融合认证服务端 APP Server，通过访问APP Server获取鉴权token，并通过访问APP Server做最终认证结果校验
+     */
+    //默认正常访问模式
+    public static final int TOKEN_MODEL=1;
+    //快速访问模式下token本地存放
+    public static final String LOCAL_TOKEN="eyJhY2Nlc3NLZXlJZCI6IlNUUy5OVXFjMVhWUDFXQWJubmhDbUZuTG0zTXVoIiwiYWNjZXNzS2V5U2VjcmV0IjoiM1p4cUhvQXNwZ2FQdlhSQVpWdHpyUXFSWFJjVHltRTRVemZaU3JQSDdBeWMiLCJiaXpUb2tlbiI6ImpVRkMzb3g1dER2d2NDMUR6Z0ZZQnNUNzNucUw3SkVjSjNnb3E2T2N3dUxpb1dTaUNQb1NwTlVCK2pLNzZ3bDR0dEJvSnBGRXNEZXkyRmRLeUZ4cFRlcE91alpqYlBNVnc0elpOdnNDTDFOMVFkOVh6OHNBRlFzeTcvRG9LRmNwblB3VWVuYkpSaWJMVlNid0lBR0lBWUFzdTVXOVArM2pGSENzUWV5RW9RSnNIZEZDWmxpYmdOajJwU2F4ejVzb0FpUisvczUranc4OEZFM2paejRuN3RqTWFyQ2ZwNFphRm1Qb3hXU211TjlNeDR3VlNCeDgvc2tVMnV4RmlBS2xvcGFrWFpTRE1HMkRUQnRDaTB6RjdaaUVSUi95WlFjQkRHMmhmc2YxR0hFeTFEYmZJK1h4THZyWXJmZklsdUF3UnpxVnBHTUZXeVAxRWVXeVRUUzJzdz09IiwidW1lbmdBcHBLZXkiOiI2NjA0ZGQ3MDhkMjFiODZhMTg0OGQ2MTUiLCJzdHNUb2tlbiI6IkNBSVN6d1IxcTZGdDVCMnlmU2pJcjViRUtJdnN1NDhRNElPSmJFalpwMjBUWXNOQjNJamVpanoySUg5RmRIbHRBZXdXc3ZnMW5tNVc3ZnNmbHJaYVFKUklYbGZxY05CeDZaSis3QitoUkpMTXZlV3Q3SUVmaFllZkhteWVVOForQkd4U09yZVhkc2pVWDl2d1FjT3U5RVlxczArVEYxaUxXMWlpTHVmWTYvcE9aY2dXV1ErVmRDZFBBTXdzU0NKcHRNNGRNd21ZVjVPcUtRVzRyV2ZNSzBCcXR3Rmc2eHQ0OHIvdDdjQ0F6UkRjZ1ZibTQrUVIzYlNUUktLcGRNNXhKcHh5ZnM2bzFlaHRETXI3M1RWWDlnSkIrZFVpN3Y1TjhpeVZ1Y3FHVVJzRG9VZUlMdkhWOWRzcU53TjZJN014RnFoSjZmUDdrL041dGF2OXZ0eXZrMDRWWmJrTkRuNkdITmo4bnBPWlJLVHJSR2hRRjl2U1AzREt6YXBNWC91Um1nZzRZSFVkR1JwWGN0NDZVQkZaQWdBdFRUZW8wTWJGZ2x6YmVnRzRHWldkMUtZLzNhRjV6SEh2OHJqNUswbVhSYTdML2lzRUFab25VbHNXT2dRWDAzM0tkYWthZmdwUUVTOXJGcTZUVnRkSVlSWlNsNjd5dkFQRGZTcHN3eE1icyt6bVllaUVsTDBFYUlMNWQ0OWEwYkVRYjRsY3NuYzdaRlB4VjZpcGptd1VkV3BzSS8xYXdiSHJJczJHOWJLZjBjdU9ldS9CRE1zTXQxTlhXamZYb1N1Q2QzNUtOaXoyNEtkVUN6eWk5dC9XMGJiSC9yNTVEUUlxL2FvL053eWVkc3QzcEZFVWlNbmJyVGJycWIrL0FpN3dyanRrcG9DSHB0QVJ0bkVKSktuMDM3V2cyUmZGcDJHVmJLVURuOFBhWlhaaVd4emZlUVlpbjZIQzFpOWYrMEJkenp2dVpVaEV0Z21Mb20rN2Q4QUF5ZktXM1hKREJLNU9oZVRmVXpxbTkzMWhGTW1FK2F3TVhlNXlpMm1CaGdsK0VXb2FnQUdJdFBOUDNqZXdSd2MvRXI2ZGtjcm1udlBXaG1HVHFCWFJWVkhlZ1NWZTdQQXBGMXZkUmxNbW5DOTN6SHVBa0Q4cENCQ3RwTjJXWTZXcjNXKy8zbWYvWStocWRTZnBBSzVDM1JuRnhKTzBBSDBVclZlQnBzTi9mS05USXkyRjRZM0pEQkZtMit4enozNFFVcmg3TUNaN3U5UlpOUU81Q3BOTFIrREJGNWZrUGlBQSIsImV4cGlyZWRUaW1lIjoxNzExNzAyNTU0MTA2fQ==";
+}

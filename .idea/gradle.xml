@@ -10,6 +10,7 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/Components" />
+            <option value="$PROJECT_DIR$/Components/Login" />
             <option value="$PROJECT_DIR$/Components/sharer" />
             <option value="$PROJECT_DIR$/Frame" />
             <option value="$PROJECT_DIR$/Frame/banner" />
@@ -19,7 +20,6 @@
             <option value="$PROJECT_DIR$/Libs/FlowBus" />
             <option value="$PROJECT_DIR$/Libs/Network" />
             <option value="$PROJECT_DIR$/Libs/myBase" />
-            <option value="$PROJECT_DIR$/Libs/utils" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
