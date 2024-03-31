@@ -1,7 +1,10 @@
 package com.ethan.app.ui;
 
+import static com.google.android.material.internal.ViewUtils.dpToPx;
+
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.os.Looper;
@@ -73,6 +76,7 @@ public class LoginActivity extends AppCompatActivity {
                         mAlicomFusionBusiness.startSceneWithTemplateId(this, "100001",uiCallBack);
                     }else {
                         Toast.makeText(GlobalInfoManager.getInstance().getContext(), "初始化未完成,请稍候", Toast.LENGTH_SHORT).show();
+                        mAlicomFusionBusiness.continueSceneWithTemplateId("100001", false);
                     }
                 } else {
                     Toast.makeText(GlobalInfoManager.getInstance().getContext(), "正在获取token，请稍后", Toast.LENGTH_SHORT).show();
@@ -370,8 +374,14 @@ public class LoginActivity extends AppCompatActivity {
             runOnUiThread(new Runnable() {
                 @Override
                 public void run() {
-                    AlicomFusionInputView inputView = alicomFusionVerifyCodeView.getInputView();
+                    RelativeLayout rootRl = alicomFusionVerifyCodeView.getRootRl();
+                    /*RelativeLayout.LayoutParams layoutParams = new RelativeLayout.LayoutParams(
+                            RelativeLayout.LayoutParams.MATCH_PARENT, // 或者MATCH_PARENT等其他宽度值
+                            dpToPx(500) // 将所需的dp高度转换为px
+                    );
+                    rootRl.setLayoutParams(layoutParams);*/
 
+                    AlicomFusionInputView inputView = alicomFusionVerifyCodeView.getInputView();
                     RelativeLayout inputNumberRootRL = inputView.getInputNumberRootRL();
                     View inflate = LayoutInflater.from(getBaseContext()).inflate(R.layout.sms_title_content, null);
                     TextView otherLogin = inflate.findViewById(R.id.tv_test);
@@ -415,6 +425,12 @@ public class LoginActivity extends AppCompatActivity {
 
 
     };
+
+    // 这是一个将dp转换为px的方法
+    private int dpToPx(int dp) {
+        Resources r = getResources();
+        return Math.round(TypedValue.applyDimension(TypedValue.COMPLEX_UNIT_DIP, dp, r.getDisplayMetrics()));
+    }
 
     protected View initTestView(int marginTop) {
         TextView switchTV = new TextView(this);
