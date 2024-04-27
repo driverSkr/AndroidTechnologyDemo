@@ -266,7 +266,6 @@ public class LoginActivity extends AppCompatActivity {
                         mAlicomFusionBusiness.continueSceneWithTemplateId("100001",false);
                     }
                 }
-
             }
         });
 

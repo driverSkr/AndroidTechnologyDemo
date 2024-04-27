@@ -9,17 +9,16 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/CompanyLib" />
+            <option value="$PROJECT_DIR$/CompanyLib/Base" />
+            <option value="$PROJECT_DIR$/CompanyLib/FlowBus" />
             <option value="$PROJECT_DIR$/Components" />
             <option value="$PROJECT_DIR$/Components/Login" />
             <option value="$PROJECT_DIR$/Components/sharer" />
             <option value="$PROJECT_DIR$/Frame" />
             <option value="$PROJECT_DIR$/Frame/banner" />
-            <option value="$PROJECT_DIR$/Libs" />
-            <option value="$PROJECT_DIR$/Libs/Base" />
-            <option value="$PROJECT_DIR$/Libs/Database" />
-            <option value="$PROJECT_DIR$/Libs/FlowBus" />
-            <option value="$PROJECT_DIR$/Libs/Network" />
-            <option value="$PROJECT_DIR$/Libs/myBase" />
+            <option value="$PROJECT_DIR$/PersonalLib" />
+            <option value="$PROJECT_DIR$/PersonalLib/Base" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>
