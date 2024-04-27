@@ -7,6 +7,7 @@ import com.ethan.app.databinding.ActivityMainBinding
 import com.ethan.app.ui.AndroidStudioDevelopmentPracticeActivity
 import com.ethan.app.ui.LoginActivity
 import com.ethan.app.ui.ShareActivity
+import com.ethan.util.Global
 import com.example.banner.BannerActivity
 
 class MainActivity : AppCompatActivity() {
@@ -17,9 +18,13 @@ class MainActivity : AppCompatActivity() {
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        binding.banner.setOnClickListener { startActivity(Intent(this, BannerActivity::class.java)) }
-        binding.share.setOnClickListener { startActivity(Intent(this, ShareActivity::class.java)) }
-        binding.login.setOnClickListener { startActivity(Intent(this, LoginActivity::class.java)) }
-        binding.developPractice.setOnClickListener { startActivity(Intent(this, AndroidStudioDevelopmentPracticeActivity::class.java)) }
+        Global.setOnClickListener(binding.banner, binding.share, binding.login, binding.developPractice) {
+            when (this) {
+                binding.banner -> { startActivity(Intent(this@MainActivity, BannerActivity::class.java)) }
+                binding.share -> { startActivity(Intent(this@MainActivity, ShareActivity::class.java)) }
+                binding.login -> { startActivity(Intent(this@MainActivity, LoginActivity::class.java)) }
+                binding.developPractice -> { startActivity(Intent(this@MainActivity, AndroidStudioDevelopmentPracticeActivity::class.java)) }
+            }
+        }
     }
 }
