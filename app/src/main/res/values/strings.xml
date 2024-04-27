@@ -10,4 +10,7 @@
     <string name="share_instagram_text">instagram</string>
     <string name="share_facebook_text">facebook</string>
     <string name="share_more_text">more</string>
+    <string name="custom_controls">第8章 自定义控件</string>
+    <string name="group_controls">第9章 组合控件</string>
+    <string name="animation_effects">第12章 动画特效</string>
 </resources>

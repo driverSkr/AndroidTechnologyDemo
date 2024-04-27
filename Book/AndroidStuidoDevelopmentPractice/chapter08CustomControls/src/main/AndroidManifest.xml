@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application>
+        <activity
+            android:name=".ui.SunUpDownActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CircleBarActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CustomBannerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CustomBottomTabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.BannerPagerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.PieAnimationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ViewInvalidateActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.HandlerPostActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.FloatNoticeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ForegroundServiceActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NotifyChannelActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NotifyCounterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NotifySimpleActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.NoscrollListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CustomTabActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MonthPickerActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.ShowDrawActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MeasureLayoutActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.MeasureTextActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ui.CustomButtonActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CustomControlMainActivity"
+            android:exported="false" />
+    </application>
+
+</manifest>

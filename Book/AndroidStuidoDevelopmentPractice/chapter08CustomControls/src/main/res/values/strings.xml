@@ -1,0 +1,16 @@
+<resources>
+    <string name="book_name">Android Studio 开发实战</string>
+
+    <!--自定义底部导航控件-->
+    <string name="bottom_tab_home">首页</string>
+    <string name="bottom_tab_nearby">附近</string>
+    <string name="bottom_tab_discover">发现</string>
+    <string name="bottom_tab_order">订单</string>
+    <string name="bottom_tab_mine">我的</string>
+    <string name="home_fragment">这是首页页面</string>
+    <string name="nearby_fragment">这是附近页面</string>
+    <string name="discover_fragment">这是发现页面</string>
+    <string name="order_fragment">这是订单页面</string>
+    <string name="mine_fragment">这是我的页面</string>
+    <string name="test">这是CustomBanner，是我自定义的控件</string>
+</resources>

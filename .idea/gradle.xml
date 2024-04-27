@@ -9,6 +9,9 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Book" />
+            <option value="$PROJECT_DIR$/Book/AndroidStuidoDevelopmentPractice" />
+            <option value="$PROJECT_DIR$/Book/AndroidStuidoDevelopmentPractice/chapter08CustomControls" />
             <option value="$PROJECT_DIR$/CompanyLib" />
             <option value="$PROJECT_DIR$/CompanyLib/Base" />
             <option value="$PROJECT_DIR$/CompanyLib/FlowBus" />
@@ -19,6 +22,11 @@
             <option value="$PROJECT_DIR$/Frame/banner" />
             <option value="$PROJECT_DIR$/PersonalLib" />
             <option value="$PROJECT_DIR$/PersonalLib/Base" />
+            <option value="$PROJECT_DIR$/PersonalLib/Utils" />
+            <option value="$PROJECT_DIR$/PersonalLib/Utils/Extension" />
+            <option value="$PROJECT_DIR$/PersonalLib/Utils/Util" />
+            <option value="$PROJECT_DIR$/Resource" />
+            <option value="$PROJECT_DIR$/Resource/Res" />
             <option value="$PROJECT_DIR$/app" />
           </set>
         </option>

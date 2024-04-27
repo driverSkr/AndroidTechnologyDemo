@@ -50,4 +50,7 @@ dependencies {
     implementation project(path: ':Frame:banner')
     implementation project(path: ':Components:sharer')
     implementation project(path: ':Components:Login')
+    implementation project(path: ':PersonalLib:Utils:Extension')
+    implementation project(path: ':PersonalLib:Utils:Util')
+    implementation project(path: ':Book:AndroidStuidoDevelopmentPractice:chapter08CustomControls')
 }
